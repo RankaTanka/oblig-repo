@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Big commit, man">
-      <change afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
+    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Basic setup for html webpage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707672552647</updated>
-      <workItem from="1707672554968" duration="1912000" />
+      <workItem from="1707672554968" duration="3134000" />
     </task>
     <task id="LOCAL−00001" summary="Big commit, man">
       <option name="closed" value="true" />
@@ -64,7 +64,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1707672611723</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Basic setup for html webpage">
+      <option name="closed" value="true" />
+      <created>1707677308564</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1707677308564</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +79,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big commit, man" />
-    <option name="LAST_COMMIT_MESSAGE" value="Big commit, man" />
+    <MESSAGE value="Basic setup for html webpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic setup for html webpage" />
   </component>
 </project>
