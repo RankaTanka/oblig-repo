@@ -1,19 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple window where you can register movie tickets">
     <title>Ticketinator</title>
+    <script src="js/javascript.js" defer></script>
 </head>
 
 <body>
 <h1>Ordering of Cinema tickets</h1>
 
-<label for="movie">Choose a movie:</label>
-<select id="movie">
-    <option>Shrek</option>
-    <option>Shrek 2</option>
-    <option>Shrek the Third</option>
-    <option>Shrek Forever After</option>
-</select>
+<div>
+    <label for="movie">Choose a movie:</label>
+    <select id="movie">
+        <option>Shrek</option>
+        <option>Shrek 2</option>
+        <option>Shrek the Third</option>
+        <option>Shrek Forever After</option>
+    </select>
+</div>
+
+<div>
+    <label for="number">Number of tickets</label>
+    <input id="number" placeholder="Write a number here">
+</div>
+
+<ul style="list-style: none; padding-left: 0">
+    <li>
+        <label for="name">Name</label>
+        <input id="name" placeholder="Write your name here">
+    </li>
+    <li>
+        <label for="last-name">Last name</label>
+        <input id="last-name" placeholder="Write your last name here">
+    </li>
+    <li>
+        <label for="phone-number">Phone number</label>
+        <input id="phone-number" placeholder="Write your number here">
+    </li>
+    <li>
+        <label for="mail">Email</label>
+        <input id="mail" placeholder="Write your email here">
+    </li>
+</ul>
+
+<div>
+    <button>Register purchase</button>
+</div>
+
+<h2>All registered purchases:</h2>
+
+<table>
+    <tr>
+        <th>Movie</th>
+        <th>Number of tickets</th>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Phone number</th>
+        <th>Email</th>
+    </tr>
+</table>
+
+<div>
+    <button>Remove all purchases</button>
+</div>
+
 </body>
+
 </html>
