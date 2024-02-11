@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple window where you can register movie tickets">
-    <title>Ticketinator</title>
+    <title>ShrekCinema</title>
     <script src="js/javascript.js"></script>
 </head>
 
@@ -48,28 +48,31 @@
             <input id="mail" name="input" placeholder="Write your email here">
         </li>
     </ul>
+
+    <button onclick="registerPurchase()">Register purchase</button>
 </section>
-
-<button onclick="registerPurchase()">Register purchase</button>
-
-
 
 <h2>All registered purchases:</h2>
 
-<table>
-    <tbody id="registered-purchases">
-        <tr>
-            <th>Movie</th>
-            <th>Number of tickets</th>
-            <th>Name</th>
-            <th>Last name</th>
-            <th>Phone number</th>
-            <th>Email</th>
-        </tr>
-    </tbody>
-</table>
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Number of tickets</th>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Phone number</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="registered-purchases">
 
-<button>Remove all purchases</button>
+        </tbody>
+    </table>
+
+    <button onclick="removePurchases()">Remove all purchases</button>
+</section>
 
 </body>
 

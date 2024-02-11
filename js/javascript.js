@@ -1,8 +1,7 @@
 // JS for all functions used in index.html
 
+
 // Function that validates and registers information, then writes it into the webpage
-
-
 function registerPurchase() {
     // Is an array containing all the selector and input elements, the elements in the array
     // are put in the same order the table headers are (Movie, Number of tickets, etc.)
@@ -18,4 +17,9 @@ function registerPurchase() {
 
     // Adds purchaseRow to the Registered purchases inner HTML
     document.getElementById("registered-purchases").innerHTML += purchaseRow;
+}
+
+// Function that restarts the Registered purchases table
+function removePurchases() {
+    document.getElementById("registered-purchases").innerHTML = null;
 }
