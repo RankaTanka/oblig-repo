@@ -7,63 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple window where you can register movie tickets">
     <title>Ticketinator</title>
-    <script src="js/javascript.js" defer></script>
+    <script src="js/javascript.js"></script>
 </head>
 
 <body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
 
 <h1>Ordering of Cinema tickets</h1>
 
-<form>
-    <section>
-        <label for="movie">Choose a movie:</label>
-        <select id="movie">
-            <option>Shrek</option>
-            <option>Shrek 2</option>
-            <option>Shrek the Third</option>
-            <option>Shrek Forever After</option>
-        </select>
 
-        <label for="number">Number of tickets</label>
-        <input id="number" placeholder="Write a number here">
-    </section>
+<!-- All elements values are retrieved from have the same name of "input" -->
+<section>
+    <label for="movie">Choose a movie:</label>
+    <select id="movie" name="input">
+        <option>Shrek</option>
+        <option>Shrek 2</option>
+        <option>Shrek the Third</option>
+        <option>Shrek Forever After</option>
+    </select>
 
-    <section>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>
-                <label for="name">Name</label>
-                <input id="name" placeholder="Write your name here">
-            </li>
-            <li>
-                <label for="last-name">Last name</label>
-                <input id="last-name" placeholder="Write your last name here">
-            </li>
-            <li>
-                <label for="phone-number">Phone number</label>
-                <input id="phone-number" placeholder="Write your number here">
-            </li>
-            <li>
-                <label for="mail">Email</label>
-                <input id="mail" placeholder="Write your email here">
-            </li>
-        </ul>
-    </section>
+    <label for="number">Number of tickets</label>
+    <input id="number" name="input" placeholder="Write a number here">
+</section>
 
-    <button>Register purchase</button>
-</form>
+<section>
+    <ul style="list-style: none; padding-left: 0;">
+        <li>
+            <label for="name">Name</label>
+            <input id="name" name="input" placeholder="Write your name here">
+        </li>
+        <li>
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="input" placeholder="Write your last name here">
+        </li>
+        <li>
+            <label for="phone-number">Phone number</label>
+            <input id="phone-number" name="input" placeholder="Write your number here">
+        </li>
+        <li>
+            <label for="mail">Email</label>
+            <input id="mail" name="input" placeholder="Write your email here">
+        </li>
+    </ul>
+</section>
+
+<button onclick="registerPurchase()">Register purchase</button>
+
 
 
 <h2>All registered purchases:</h2>
 
 <table>
-    <tr>
-        <th>Movie</th>
-        <th>Number of tickets</th>
-        <th>Name</th>
-        <th>Last name</th>
-        <th>Phone number</th>
-        <th>Email</th>
-    </tr>
+    <tbody id="registered-purchases">
+        <tr>
+            <th>Movie</th>
+            <th>Number of tickets</th>
+            <th>Name</th>
+            <th>Last name</th>
+            <th>Phone number</th>
+            <th>Email</th>
+        </tr>
+    </tbody>
 </table>
 
 <button>Remove all purchases</button>

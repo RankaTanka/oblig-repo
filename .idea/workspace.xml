@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Basic setup for html webpage">
+    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="They call me the &lt;div&gt; exterminator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707672552647</updated>
-      <workItem from="1707672554968" duration="3134000" />
+      <workItem from="1707672554968" duration="6430000" />
     </task>
     <task id="LOCAL−00001" summary="Big commit, man">
       <option name="closed" value="true" />
@@ -71,7 +72,28 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1707677308564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="They call me the &lt;div&gt; exterminator">
+      <option name="closed" value="true" />
+      <created>1707678722551</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1707678722551</updated>
+    </task>
+    <task id="LOCAL−00004" summary="They call me the &lt;div&gt; exterminator">
+      <option name="closed" value="true" />
+      <created>1707678769167</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1707678769167</updated>
+    </task>
+    <task id="LOCAL−00005" summary="They call me the &lt;div&gt; exterminator">
+      <option name="closed" value="true" />
+      <created>1707678798231</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1707678798231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big commit, man" />
     <MESSAGE value="Basic setup for html webpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic setup for html webpage" />
+    <MESSAGE value="They call me the &lt;div&gt; exterminator" />
+    <option name="LAST_COMMIT_MESSAGE" value="They call me the &lt;div&gt; exterminator" />
   </component>
 </project>
