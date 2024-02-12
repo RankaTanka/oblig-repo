@@ -13,9 +13,9 @@ function registerPurchase() {
 
     // Checking if the Tickets input value is valid,
     // if not ticketValidation is set to true and a message is shown
-    if (document.getElementById("movie-and-tickets").value === "" ||
-        Math.round(Number(document.getElementById("movie-and-tickets").value)) !==
-        Number(document.getElementById("movie-and-tickets").value)) {
+    if (document.getElementById("tickets").value === "" ||
+        Math.round(Number(document.getElementById("tickets").value)) !==
+        Number(document.getElementById("tickets").value)) {
 
         ticketValidation = true;
 
@@ -81,8 +81,8 @@ function registerPurchase() {
 
     // if all the validations are false the Purchase registration goes through
     if (!ticketValidation && !firstNameValidation && !lastNameValidation && !phoneNumberValidation && !mailValidation) {
-        // This is an array containing all the selector and input elements, the elements in the array
-        // are put in the same order the table headers are (Movie, Number of tickets, etc.)
+        // This is an array containing all the selector and input elements, the elements in the array index.html is
+        // set up in a way so that they are put in the same order the table headers are (Movie, Tickets, etc.)
         const purchaseInformation = document.getElementsByName("input");
 
         // Code generating the next row in the Registered purchases table
