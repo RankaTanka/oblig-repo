@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Fixed some shit in index.html and made a basic function, registerPurchase() that registers inputted purchase information">
+    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
     </list>
@@ -55,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707672552647</updated>
-      <workItem from="1707672554968" duration="6782000" />
+      <workItem from="1707672554968" duration="14797000" />
     </task>
     <task id="LOCAL−00001" summary="Big commit, man">
       <option name="closed" value="true" />
@@ -99,7 +100,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1707685696552</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head">
+      <option name="closed" value="true" />
+      <created>1707686296058</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1707686296058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +118,7 @@
     <MESSAGE value="Basic setup for html webpage" />
     <MESSAGE value="They call me the &lt;div&gt; exterminator" />
     <MESSAGE value="Fixed some shit in index.html and made a basic function, registerPurchase() that registers inputted purchase information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some shit in index.html and made a basic function, registerPurchase() that registers inputted purchase information" />
+    <MESSAGE value="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head" />
   </component>
 </project>
