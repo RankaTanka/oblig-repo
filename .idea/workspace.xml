@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Wrote some javascript so that invalid purchases don't get registered">
+    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Did some simple styling for index.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
@@ -58,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707672552647</updated>
-      <workItem from="1707672554968" duration="28467000" />
+      <workItem from="1707672554968" duration="32823000" />
     </task>
     <task id="LOCAL−00001" summary="Big commit, man">
       <option name="closed" value="true" />
@@ -123,7 +123,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1707742606150</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Did some simple styling for index.html">
+      <option name="closed" value="true" />
+      <created>1707756777891</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1707756777891</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +144,7 @@
     <MESSAGE value="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head" />
     <MESSAGE value="Made some patterns for the input" />
     <MESSAGE value="Wrote some javascript so that invalid purchases don't get registered" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote some javascript so that invalid purchases don't get registered" />
+    <MESSAGE value="Did some simple styling for index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some simple styling for index.html" />
   </component>
 </project>

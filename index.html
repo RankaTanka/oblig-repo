@@ -9,7 +9,7 @@
     <title>ShrekCinema</title>
     <script src="js/javascript.js" defer></script>
 
-    <!-- Some simple styling for the document -->
+    <!-- Some styling for the document -->
     <style>
         body {
             margin-left: 30px;
@@ -17,13 +17,16 @@
             background-color: ghostwhite;
         }
 
+        span {
+            color: red;
+        }
+
         li {
             white-space: pre-line;
             padding-bottom: 8px;
         }
 
-        /* Some simple styling of all elements one can interact with and their labels */
-
+        /* Some styling of all interactable elements */
         label {
             font-weight: bold;
         }
@@ -32,11 +35,11 @@
             height: 15px;
             width: 23px;
             vertical-align: bottom;
-            /* To remove the arrows show up when setting the Tickets input type to number in Firefox */
+            /* Something to remove the arrows show up when setting the Tickets input type to number in Firefox */
             -moz-appearance: textfield;
         }
 
-        /* To remove the same arrows in Chrome, Safari, Edge and Opera */
+        /* Something to remove the same arrows in Chrome, Safari, Edge and Opera */
         input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
@@ -64,7 +67,12 @@
             border-color: black;
         }
 
-
+        /* Class only used for the list elements where the invalid messages get shown */
+        .invalid {
+            white-space: normal;
+            padding-bottom: 0;
+            color: red;
+        }
     </style>
 
 </head>
@@ -74,37 +82,55 @@
 <h1>Ordering of Cinema tickets</h1>
 
 <!-- All elements values are retrieved from have the same name of "input" -->
+
+<!-- Section containing a movie selector and an input for number of tickets -->
 <section>
     <label for="movie-and-tickets">Movie and number of tickets:</label>
-    <!-- this is the Tickets input element, it only accepts valueas that are 1 or higher -->
+    <!-- this is the Tickets input element, it only accepts integers that are 1 or higher -->
     <input type="number" id="movie-and-tickets" name="input" placeholder="1"
            title="Write amount of tickets you want to buy here" min="1">
-    <select name="input">
+    <select name="input" title="Choose the movie you want to watch">
         <option>Shrek</option>
         <option>Shrek 2</option>
         <option>Shrek the Third</option>
         <option>Shrek Forever After</option>
     </select>
+    <span id="invalid-ticket"></span>
 </section>
 
+<!-- Section containing inputs for personal information -->
 <section>
     <ul style="list-style: none; padding-left: 0;">
+
+        <!-- this is the First name input element, it only accepts values that consists of 2 or more letters -->
         <li><label for="first-name">Name</label>
             <input type="text" id="first-name" name="input" placeholder="Name" title="Write your first name here"
             pattern="[a-zA-Z]{2,}">
         </li>
+        <li class="invalid" id="invalid-first-name"></li>
+
+        <!-- this is the Last name input element, it only accepts values that consists of 2 or more letters -->
         <li><label for="last-name">Last name</label>
             <input type="text" id="last-name" name="input" placeholder="Namington" title="Write your last name here"
             pattern="[a-zA-Z]{2,}">
         </li>
+        <li class="invalid" id="invalid-last-name"></li>
+
+        <!-- this is the Phone number input element -->
+        <!-- it only accepts values that consists of 8 digits where the first digit is not 0 -->
         <li><label for="phone-number">Phone number</label>
             <input type="tel" id="phone-number" name="input" placeholder="12345678" title="Write your phone number here"
                    pattern="[1-9]{1}[\d]{7}">
         </li>
+        <li class="invalid" id="invalid-phone-number"></li>
+
+        <!-- this is the Mail input element, it only accepts emails -->
         <li><label for="mail">Email</label>
             <input type="email" id="mail" name="input" placeholder="nnn@nnn.nnn" title="Write your email here"
                    pattern="[a-z0-9.]+@[a-z0-9.]+\.[a-z]{2,3}">
         </li>
+        <li class="invalid" id="invalid-mail"></li>
+
     </ul>
 
     <button onclick="registerPurchase()">Register purchases</button>

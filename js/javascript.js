@@ -1,28 +1,29 @@
 // JS for all functions used in index.html
 
-
 // Function that retrieves information, then writes it into the Registered purchases table
 function registerPurchase() {
     // A bunch of boolean validation checks, if one is true it is invalid and if one is false it is valid
     let ticketValidation = false;
     let firstNameValidation = document.getElementById("first-name").validity.patternMismatch;
-    console.log(firstNameValidation);
     let lastNameValidation = document.getElementById("last-name").validity.patternMismatch;
-    console.log(lastNameValidation);
     let phoneNumberValidation = document.getElementById("phone-number").validity.patternMismatch;
-    console.log(phoneNumberValidation);
     // I wanted to just use typeMismatch to validate the Mail input, but it accepted values like "bob@gmail"
     let mailValidation = document.getElementById("mail").validity.patternMismatch;
-    console.log(mailValidation);
+
 
     // Checking if the Tickets input value is valid,
     // if not ticketValidation is set to true and a message is shown
-    if (document.getElementById("tickets").value === "" ||
-        Math.round(Number(document.getElementById("tickets").value)) !==
-        Number(document.getElementById("tickets").value)) {
+    if (document.getElementById("movie-and-tickets").value === "" ||
+        Math.round(Number(document.getElementById("movie-and-tickets").value)) !==
+        Number(document.getElementById("movie-and-tickets").value)) {
 
         ticketValidation = true;
-        alert("1");
+
+        document.getElementById("invalid-ticket").innerHTML = "Please enter a valid number";
+    }
+    // Every time the input is valid the message gets removed
+    else {
+        document.getElementById("invalid-ticket").innerHTML = "";
     }
 
     // Checking if the First name input value is valid,
@@ -31,7 +32,11 @@ function registerPurchase() {
         firstNameValidation === true) {
 
         firstNameValidation = true;
-        alert("2");
+
+        document.getElementById("invalid-first-name").innerHTML = "Please enter a valid first name";
+    }
+    else {
+        document.getElementById("invalid-first-name").innerHTML = "";
     }
 
     // Checking if the Last name input value is valid,
@@ -40,7 +45,11 @@ function registerPurchase() {
         lastNameValidation === true) {
 
         lastNameValidation = true;
-        alert("3");
+
+        document.getElementById("invalid-last-name").innerHTML = "Please enter a valid last name";
+    }
+    else {
+        document.getElementById("invalid-last-name").innerHTML = "";
     }
 
     // Checking if the Phone number input value is valid,
@@ -49,7 +58,11 @@ function registerPurchase() {
         phoneNumberValidation === true) {
 
         phoneNumberValidation = true;
-        alert("4");
+
+        document.getElementById("invalid-phone-number").innerHTML = "Please enter a valid phone number";
+    }
+    else {
+        document.getElementById("invalid-phone-number").innerHTML = "";
     }
 
     // Checking if the Mail input value is valid,
@@ -58,7 +71,11 @@ function registerPurchase() {
         mailValidation === true) {
 
         mailValidation = true;
-        alert("5");
+
+        document.getElementById("invalid-mail").innerHTML = "Please enter a valid email";
+    }
+    else {
+        document.getElementById("invalid-mail").innerHTML = "";
     }
 
 
