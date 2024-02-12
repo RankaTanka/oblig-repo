@@ -81,6 +81,7 @@ function registerPurchase() {
     }
 }
 
+
 // Function that restarts the Registered purchases table
 function removePurchases() {
     document.getElementById("registered-purchases").innerHTML = "";

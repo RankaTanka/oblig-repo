@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Made some patterns for the input">
+    <list default="true" id="96c5a96b-15ff-45e9-a78c-1e9534af78a3" name="Changes" comment="Wrote some javascript so that invalid purchases don't get registered">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -55,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707672552647</updated>
-      <workItem from="1707672554968" duration="18260000" />
+      <workItem from="1707672554968" duration="28467000" />
     </task>
     <task id="LOCAL−00001" summary="Big commit, man">
       <option name="closed" value="true" />
@@ -113,7 +116,14 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1707736796597</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Wrote some javascript so that invalid purchases don't get registered">
+      <option name="closed" value="true" />
+      <created>1707742606150</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1707742606150</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +136,7 @@
     <MESSAGE value="Fixed some shit in index.html and made a basic function, registerPurchase() that registers inputted purchase information" />
     <MESSAGE value="Added a basic function removePurchases() that removes everything from the Registered purchases table except for the head" />
     <MESSAGE value="Made some patterns for the input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some patterns for the input" />
+    <MESSAGE value="Wrote some javascript so that invalid purchases don't get registered" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote some javascript so that invalid purchases don't get registered" />
   </component>
 </project>
