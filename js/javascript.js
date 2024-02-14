@@ -3,7 +3,7 @@
 // Function that retrieves information, then writes it into the Registered purchases table
 function registerPurchase() {
     // A bunch of boolean validation checks, if one is true it is invalid and if one is false it is valid
-    let ticketValidation = false;
+    let ticketValidation = document.getElementById("tickets").validity.rangeUnderflow;
     let firstNameValidation = document.getElementById("first-name").validity.patternMismatch;
     let lastNameValidation = document.getElementById("last-name").validity.patternMismatch;
     let phoneNumberValidation = document.getElementById("phone-number").validity.patternMismatch;
@@ -15,7 +15,8 @@ function registerPurchase() {
     // if not ticketValidation is set to true and a message is shown
     if (document.getElementById("tickets").value === "" ||
         Math.round(Number(document.getElementById("tickets").value)) !==
-        Number(document.getElementById("tickets").value)) {
+        Number(document.getElementById("tickets").value) ||
+        ticketValidation === true) {
 
         ticketValidation = true;
 
