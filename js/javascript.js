@@ -20,6 +20,7 @@ function registerPurchase() {
 
         ticketValidation = true;
 
+        document.getElementById("tickets").value = "1";
         document.getElementById("invalid-ticket").innerHTML = "Please enter a valid number";
     }
     // Every time the input is valid the message gets removed
@@ -34,6 +35,7 @@ function registerPurchase() {
 
         firstNameValidation = true;
 
+        document.getElementById("first-name").value = "";
         document.getElementById("invalid-first-name").innerHTML = "Please enter a valid first name";
     }
     else {
@@ -47,6 +49,7 @@ function registerPurchase() {
 
         lastNameValidation = true;
 
+        document.getElementById("last-name").value = "";
         document.getElementById("invalid-last-name").innerHTML = "Please enter a valid last name";
     }
     else {
@@ -60,6 +63,7 @@ function registerPurchase() {
 
         phoneNumberValidation = true;
 
+        document.getElementById("phone-number").value = "";
         document.getElementById("invalid-phone-number").innerHTML = "Please enter a valid phone number";
     }
     else {
@@ -73,6 +77,7 @@ function registerPurchase() {
 
         mailValidation = true;
 
+        document.getElementById("mail").value = "";
         document.getElementById("invalid-mail").innerHTML = "Please enter a valid email";
     }
     else {
